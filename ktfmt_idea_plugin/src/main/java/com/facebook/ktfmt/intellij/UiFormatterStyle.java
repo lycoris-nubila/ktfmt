@@ -19,6 +19,7 @@ package com.facebook.ktfmt.intellij;
 import static com.facebook.ktfmt.FormatterKt.DROPBOX_FORMAT;
 import static com.facebook.ktfmt.FormatterKt.GOOGLE_FORMAT;
 import static com.facebook.ktfmt.FormatterKt.KOTLINLANG_FORMAT;
+import static com.facebook.ktfmt.FormatterKt.CALENDOC_FORMAT;
 
 import com.facebook.ktfmt.FormattingOptions;
 
@@ -27,7 +28,8 @@ enum UiFormatterStyle {
   DEFAULT("Default", new FormattingOptions()),
   DROPBOX("Dropbox", DROPBOX_FORMAT),
   GOOGLE("Google (internal)", GOOGLE_FORMAT),
-  KOTLINLANG("Kotlinlang", KOTLINLANG_FORMAT);
+  KOTLINLANG("Kotlinlang", KOTLINLANG_FORMAT),
+  CALENDOC("calenDoc", CALENDOC_FORMAT);
 
   private final String description;
   private final FormattingOptions formattingOptions;

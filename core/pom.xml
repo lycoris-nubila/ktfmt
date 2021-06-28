@@ -11,7 +11,7 @@
     <parent>
         <groupId>com.facebook</groupId>
         <artifactId>ktfmt-parent</artifactId>
-        <version>0.25</version>
+        <version>0.28</version>
     </parent>
 
     <properties>
@@ -233,7 +233,7 @@
                         </executions>
                     </plugin>
 
-                    <!-- Sign artifacts -->
+                    <!-- Sign artifacts
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
@@ -246,15 +246,13 @@
                                     <goal>sign</goal>
                                 </goals>
                                 <configuration>
-                                    <!-- Honor -Dgpg.passphrase=... on the command line. -->
                                     <gpgArguments>
-                                        <arg>--pinentry-mode</arg>
                                         <arg>loopback</arg>
                                     </gpgArguments>
                                 </configuration>
                             </execution>
                         </executions>
-                    </plugin>
+                    </plugin>-->
                 </plugins>
             </build>
         </profile>

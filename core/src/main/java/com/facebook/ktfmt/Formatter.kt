@@ -51,6 +51,9 @@ val KOTLINLANG_FORMAT = FormattingOptions(style = GOOGLE, blockIndent = 4, conti
 @JvmField
 val DROPBOX_FORMAT = FormattingOptions(style = DROPBOX, blockIndent = 4, continuationIndent = 4)
 
+@JvmField
+val CALENDOC_FORMAT = FormattingOptions(style = GOOGLE, blockIndent = 4, continuationIndent = 4, maxWidth = 150)
+
 data class FormattingOptions(
     val style: Style = Style.FACEBOOK,
 
